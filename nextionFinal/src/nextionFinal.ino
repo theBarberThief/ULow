@@ -1,4 +1,4 @@
-#include "ITEADLIB_Nextion.h"
+#include "Nextion.h"
 
 
 NexButton b0 = NexButton(0, 2, "b0");
@@ -39,6 +39,3 @@ void loop(void)
   nexLoop(nex_listen_list);
 }
 
-void hello(){
-  "hello";
-}
