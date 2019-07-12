@@ -3,15 +3,16 @@
 /******************************************************/
 
 #include "application.h"
-#line 1 "c:/Users/johnw/Desktop/APCSSCHOOOL20189/nextionFinal/src/nextionFinal.ino"
-#include "Nextion.h"
+#line 1 "/Users/s210230/Desktop/ULowe/nextionFinal/src/nextionFinal.ino"
+#include "ITEADLIB_Nextion.h"
 
 
 void b0PopCallback(void *ptr);
 void b1PopCallback(void *ptr);
 void setup(void);
 void loop(void);
-#line 4 "c:/Users/johnw/Desktop/APCSSCHOOOL20189/nextionFinal/src/nextionFinal.ino"
+void hello();
+#line 4 "/Users/s210230/Desktop/ULowe/nextionFinal/src/nextionFinal.ino"
 NexButton b0 = NexButton(0, 2, "b0");
 NexText t0 = NexText(0, 3, "t0");
 NexButton b1 = NexButton(0, 4, "b1");
@@ -48,4 +49,8 @@ void setup(void) {
 void loop(void) 
 {
   nexLoop(nex_listen_list);
+}
+
+void hello(){
+  "hello";
 }
