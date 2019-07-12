@@ -75,14 +75,14 @@
 /**
  * Define dbSerial for the output of debug messages. 
  */
-#define dbSerial Serial
+//#define dbSerial Serial
 
 /**
  * Define nexSerial for communicate with Nextion touch panel. 
  * this has to be set in the main project file
  */
-extern USARTSerial& nexSerial;
-
+//extern USARTSerial& nexSerial;
+#define nexSerial Serial
 
 #ifdef DEBUG_SERIAL_ENABLE
 #define dbSerialPrint(a)    dbSerial.print(a)
